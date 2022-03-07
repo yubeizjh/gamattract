@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gamattract</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><img src="logo.png" style="height: 15px; margin-top: -3px;"></a>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">LATEST</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+    <a href="gameFeeds.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><em>FEEDS</em></a>
+    <a href="websiteGuide.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WEBSITES</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="moments.html" class="w3-bar-item w3-button">BEST MOMENTS</a>
+        <a href="about.html" class="w3-bar-item w3-button">CONTACT</a>
+      </div>
+    </div>
+    <a target="_blank" href="https://gameattract.wordpress.com/" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-thumbs-up"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LATEST</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+  <a href="gameFeeds.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><em>FEEDS</em></a>
+  <a href="websiteGuide.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WEBSITES</a>
+  <a href="moments.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEST MOMENTS</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="width:60%;margin-top:60px">
+    <!-- Blog entry -->
+    <div class="w3-round w3-card-4 w3-margin w3-white">
+      <img class="w3-round" src="./gameImages/elden-ring.jpeg" alt="Norway" style="width:100%">
+      <div class="w3-container">
+      <h3><b>Elden Ring</b></h3>
+      <h5>Put a ring on it. <span class="w3-opacity">Feb 23, 2022</span></h5>
+      </div>
+
+      <div class="w3-container">
+      <p>In the 87 hours that it took me to beat Elden Ring, I was put through an absolute wringer of emotion: Anger as I was beaten down by its toughest challenges, exhilaration when I finally overcame them, and a fair amount of sorrow for the mountains of exp I lost along the way to some of the toughest boss encounters FromSoftware has ever conceived.</p>
+      <div class="w3-row">
+          <div class="w3-col m8 s12">
+          <a href="./feeds/feedsDetail_01.html" class="w3-button w3-padding-large w3-white w3-border">READ MORE »</a>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+          </div>
+      </div>
+      </div>
+  </div>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white w3-round">
+        <img class="w3-round" src="./gameImages/genshin_impact.jpeg" alt="Nature" style="width:100%">
+        <div class="w3-container">
+        <h3><b>Genshin Impact</b></h3>
+        <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+        </div>
+
+        <div class="w3-container">
+        <p>It's a great game which I like. We will do it later.</p>
+        <div class="w3-row">
+            <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Not ready :)</b></button></p>
+            </div>
+            <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+
+    
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">ESSEC</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>

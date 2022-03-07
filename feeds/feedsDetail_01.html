@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gamattract</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+p {color: white;}
+.quote p {color: black;}
+body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
+.mySlides {display: none}
+a{text-decoration:none;}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large"><img src="../logo.png" style="height: 15px; margin-top: -3px;"></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">LATEST</a>
+    <a href="../gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+    <a href="../gameFeeds.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><em>FEEDS</em></a>
+    <a href="../websiteGuide.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WEBSITES</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="../moments.html" class="w3-bar-item w3-button">BEST MOMENTS</a>
+        <a href="../about.html" class="w3-bar-item w3-button">CONTACT</a>
+      </div>
+    </div>
+    <a target="_blank" href="https://gameattract.wordpress.com/" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-thumbs-up"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="../index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LATEST</a>
+  <a href="../gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+  <a href="../gameFeeds.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><em>FEEDS</em></a>
+  <a href="../websiteGuide.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WEBSITES</a>
+  <a href="../moments.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEST MOMENTS</a>
+  <a href="../about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Header with image -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <img src="../gameImages/elden-ring.jpeg" style="width:100%">
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h1 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Elden Ring Review</span></h1>
+    <p>In the 87 hours that it took me to beat Elden Ring, I was put through an absolute wringer of emotion: Anger as I was beaten down by its toughest challenges, exhilaration when I finally overcame them, and a fair amount of sorrow for the mountains of exp I lost along the way to some of the toughest boss encounters FromSoftware has ever conceived. But more than anything else I was in near-constant awe – from the many absolutely jaw-dropping vistas, the sheer scope of an absolutely enormous world, the frequently harrowing enemies, and the way in which Elden Ring nearly always rewarded my curiosity with either an interesting encounter, a valuable reward, or something even greater. FromSoftware takes the ball that The Legend of Zelda: Breath of the Wild got rolling and runs with it, creating a fascinating and dense open world about freedom and exploration above all else, while also somehow managing to seamlessly weave a full-on Dark Souls game into the middle of it. It shouldn’t be a surprise to anyone that Elden Ring ended up as one of the most unforgettable gaming experiences I’ve ever had.</p>
+    <p>To set the stage, all you know from the outset is that you play as a “Tarnished” of no renown, blessed by grace, and are compelled to make the journey to The Lands Between and become an Elden Lord. What that actually means, how one might go about doing that, and what the deal is with that giant glowing golden tree are all things that you have to discover yourself. Like other FromSoft games, the grand story is hard to fully digest on a first playthrough, especially because there’s no in-game journal to refresh you on the events, characters, or unique terms you encounter across dozens of hours. There really should be, but it is a story I nonetheless enjoyed trying to piece together for myself. I look forward to supplementing that knowledge with the inevitable painstakingly detailed lore videos that emerge from the community later.</p>
+    <div class="quote w3-panel w3-leftbar w3-light-grey">
+      <p>I never once felt the open-world fatigue that usually sets in when my brain gets overloaded by a map.</p>
+    </div>
+    <p>Put a ring on it.</p>
+    <!-- return botton -->
+    <div class="w3-center">
+        <a class="w3-round-xxlarge w3-button w3-black w3-section" href="../gameFeeds.html"> 
+          <i class="fa fa-commenting"></i> back to feeds
+        </a>
+        <a class="w3-round-xxlarge w3-button w3-black w3-section" href="../details/gameDetails_01.html"> 
+          <i class="fa fa-cubes"></i> back to detail
+        </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">ESSEC</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
