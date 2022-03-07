@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Gamattract</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html{scroll-padding: 3rem 0 0 0;}
 a{text-decoration:none;}
 h3{color: lightgray;}
-body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
-.mySlides {display: none}
 .w3-sidebar {
   z-index: 3;
   width: 180px;
@@ -28,11 +16,6 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
     height:50px;
     overflow:hidden;
     border-radius:50%;
-}
-.circular--landscape img{
-    width:auto;
-    height:100%;
-    margin-left:-50%;
 }
 .card-hover{
     transition: all 250ms cubic-bezier(.02, .01, .47, 1);
@@ -52,41 +35,7 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
 .card-hover:hover .hint-text{
     display: inline;
 }
-</style>
-
-</head>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><img src="logo.png" style="height: 15px; margin-top: -3px;"></a>
-
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">LATEST</a>
-      <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
-      <a href="gameFeeds.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDS</a>
-      <a href="websiteGuide.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><em>WEBSITES</em></a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="moments.html" class="w3-bar-item w3-button">BEST MOMENTS</a>
-          <a href="about.html" class="w3-bar-item w3-button">CONTACT</a>
-        </div>
-      </div>
-      <a target="_blank" href="https://gameattract.wordpress.com/" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-thumbs-up"></i></a>
-    </div>
-  </div>
-  
-  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LATEST</a>
-    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
-    <a href="gameFeeds.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FEEDS</a>
-    <a href="websiteGuide.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><em>WEBSITES</em></a>
-    <a href="moments.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEST MOMENTS</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  </div>
+</style>  
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
@@ -109,21 +58,21 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
     <div class="w3-row-padding">
         <a target="_blank"  href="https://store.steampowered.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/steam.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/steam.png">
                 <span class="w3-margin-left">Steam</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="https://www.epicgames.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/epic.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/epic.png">
                 <span class="w3-margin-left">Epic</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="https://www.playstation.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/playStation.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/playStation.png">
                 <span class="w3-margin-left">Play Station</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
@@ -133,7 +82,7 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
     <div class="w3-row-padding">
         <a target="_blank"  href="https://www.nintendo.fr/Nintendo-eShop/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/nintendo.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/nintendo.png">
                 <span class="w3-margin-left">Nintendo eShop</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
@@ -148,14 +97,14 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
     <div class="w3-row-padding">
         <a target="_blank"  href="https://www.micromania.fr/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/micro.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/micro.png">
                 <span class="w3-margin-left">Micromania</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="https://shop42406197.m.youzan.com/v2/showcase/homepage?kdt_id=42214029" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/jump.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/jump.png">
                 <span class="w3-margin-left">JUMP</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
@@ -171,21 +120,21 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
     <div class="w3-row-padding">
         <a target="_blank"  href="https://www.ign.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/ign.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/ign.png">
                 <span class="w3-margin-left">IGN</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="https://www.metacritic.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/metacritic.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/metacritic.png">
                 <span class="w3-margin-left">Meta Critic</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="https://www.gamersky.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/gamersky.jpeg">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/gamersky.jpeg">
                 <span class="w3-margin-left">GamerSky</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
@@ -195,21 +144,21 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
     <div class="w3-row-padding">
         <a target="_blank"  href="https://www.3dmgame.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/3dm.jpeg">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/3dm.jpeg">
                 <span class="w3-margin-left">3DM games</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="http://www.tgbus.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/tgbus.jpeg">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/tgbus.jpeg">
                 <span class="w3-margin-left">TGbus</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="https://www.metacritic.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/yys.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/yys.png">
                 <span class="w3-margin-left">YYS</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
@@ -224,21 +173,21 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
     <div class="w3-row-padding">
         <a target="_blank"  href="https://www.reddit.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/reddit.jpeg">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/reddit.jpeg">
                 <span class="w3-margin-left">Reddit</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="https://tieba.baidu.com/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/tieba.png">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/tieba.png">
                 <span class="w3-margin-left">Tieba</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
         </a>
         <a target="_blank"  href="https://nga.cn/" class="w3-col s4 w3-card-4 w3-margin-bottom">
             <div class="card-hover w3-container w3-white w3-round">
-                <img class="w3-margin-top w3-margin-bottom circular--landscape" src="websiteIcon/nga.jpeg">
+                <img class="w3-margin-top w3-margin-bottom circular--landscape" alt="empty" src="websiteIcon/nga.jpeg">
                 <span class="w3-margin-left">NGA</span>
                 <span class="hint-text"><em>------>GO!</em></span>
             </div>
@@ -246,31 +195,3 @@ body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
 
     </div>
 </div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" style="margin-left:150px">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">ESSEC</a></p>
-</footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-
-</script>
-
-</body>
-</html>

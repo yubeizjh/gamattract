@@ -1,50 +1,59 @@
-<script context="module">
-	import { browser, dev } from '$app/env';
+<style>
+h1, h3, p {color: lightgray;}
+</style>
 
-	// we don't need any JS on this page, though we'll load
-	// it in dev so that we get hot module replacement...
-	export const hydrate = dev;
 
-	// ...but if the client-side router is already loaded
-	// (i.e. we came here from elsewhere in the app), use it
-	export const router = browser;
-
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
-	export const prerender = true;
-</script>
-
-<svelte:head>
-	<title>About</title>
-</svelte:head>
-
-<div class="content">
-	<h1>About this app</h1>
-
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<!-- TODO lose the @next! -->
-	<pre>npm init svelte@next</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
-	</p>
+<!-- About Section -->
+<div class="w3-container w3-padding-32" id="about">
+<h1 class="w3-padding-16">About us</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+	occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+	laboris nisi ut aliquip ex ea commodo consequat.
+</p>
 </div>
 
-<style>
-	.content {
-		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
-	}
-</style>
+<div class="w3-row-padding">
+<div class="w3-col l3 m6 w3-margin-bottom">
+	<img src="./teamPic/rilakkuma.png" alt="John" style="width:100%">
+	<h3>Rilakkuma</h3>
+	<p class="w3-opacity">CEO & Founder</p>
+	<p>Pancake is great!</p>
+	<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+	<img src="./teamPic/korilakkuma.png" alt="Jane" style="width:100%">
+	<h3>Korilakkuma</h3>
+	<p class="w3-opacity">UI & UX designer</p>
+	<p>Designing best pancakes...</p>
+	<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+	<img src="./teamPic/kiiroitori.png" alt="Mike" style="width:100%">
+	<h3>Kiiroitori</h3>
+	<p class="w3-opacity">Programmer</p>
+	<p>Making pancakes...</p>
+	<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+	<img src="./teamPic/chairoikoguma.png" alt="Mike" style="width:100%">
+	<h3>Chairoikoguma</h3>
+	<p class="w3-opacity">Programmer</p>
+	<p>Adding honey...</p>
+	<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-32 w3-center" id="contact" style="width: 50%;margin-left: 25%;">
+<h1 class="w3-padding-16">Contact</h1>
+<p>Let us know which game you like.</p>
+<form action="/action_page.php" target="_blank">
+<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+<button class="w3-button w3-black w3-section" type="submit">
+	<i class="fa fa-paper-plane"></i> SEND MESSAGE
+</button>
+</form>
+</div>
