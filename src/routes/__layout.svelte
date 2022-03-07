@@ -1,3 +1,7 @@
+<script lang="ts">
+    import "carbon-components-svelte/css/g10.css";
+</script>
+
 <div class="content">
     <nav>
         <span class="company-title">Company Name</span>
