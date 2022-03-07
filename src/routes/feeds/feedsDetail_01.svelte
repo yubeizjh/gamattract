@@ -22,10 +22,10 @@ a{text-decoration:none;}
     <p>Put a ring on it.</p>
     <!-- return botton -->
     <div class="w3-center">
-        <a class="w3-round-xxlarge w3-button w3-black w3-section" href="../gameFeeds.html"> 
+        <a class="w3-round-xxlarge w3-button w3-black w3-section" href="../gameFeeds"> 
           <i class="fa fa-commenting"></i> back to feeds
         </a>
-        <a class="w3-round-xxlarge w3-button w3-black w3-section" href="../details/gameDetails_01.html"> 
+        <a class="w3-round-xxlarge w3-button w3-black w3-section" href="../details/gameDetails_01"> 
           <i class="fa fa-cubes"></i> back to detail
         </a>
     </div>
