@@ -1,13 +1,12 @@
 <style>
-h1, h3, p {color: lightgray;}
+h1, h3, h4, p {color: lightgray;}
 </style>
 
 
 <!-- About Section -->
 <div class="w3-container w3-padding-32" id="about">
-<h1 class="w3-padding-16">About us</h1>
-<p> We love games! Play games everyday! Latest lover is Elden Ring!
-</p>
+<h1 class="w3-padding-16 w3-center">About us</h1>
+<h4 class="w3-center"> We love games <br>Play games everyday <br>Latest lover is Elden Ring</h4>
 </div>
 
 <div class="w3-row-padding">
@@ -44,14 +43,14 @@ h1, h3, p {color: lightgray;}
 <!-- Contact Section -->
 <div class="w3-container w3-padding-32 w3-center" id="contact" style="width: 50%;margin-left: 25%;">
 <h1 class="w3-padding-16">Contact</h1>
-<p>Let us know which game you like.</p>
+<p style="margin-bottom: 40px;">Let us know which game you like to add or review</p>
 <form action="/action_page.php" target="_blank">
-<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-<button class="w3-button w3-black w3-section" type="submit">
-	<i class="fa fa-paper-plane"></i> SEND MESSAGE
-</button>
+	<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+	<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+	<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+	<textarea class="w3-input w3-section w3-border"  id="extra" name="extra" rows="3" placeholder="Comments"></textarea>
+	<button class="w3-button w3-black w3-section" type="submit">
+		<i class="fa fa-paper-plane"></i> SEND MESSAGE
+	</button>
 </form>
 </div>

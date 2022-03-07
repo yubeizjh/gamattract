@@ -20,7 +20,7 @@
     <div class="w3-margin">
         <h5>Related Feeds</h5>
         <div class="w3-card-4 w3-white w3-round-xxlarge w3-margin-bottom">
-            <p class="w3-padding-16 w3-center">Not ready yet</p>
+            <a href="../feeds/gF_genshin"><p class="w3-padding-16 w3-center">Genshin Impact Review</p></a>
         </div>
     </div>
     <div class="w3-center">
