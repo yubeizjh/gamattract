@@ -13,7 +13,7 @@
       <p>In the 87 hours that it took me to beat Elden Ring, I was put through an absolute wringer of emotion: Anger as I was beaten down by its toughest challenges, exhilaration when I finally overcame them, and a fair amount of sorrow for the mountains of exp I lost along the way to some of the toughest boss encounters FromSoftware has ever conceived.</p>
       <div class="w3-row">
           <div class="w3-col m8 s12">
-          <a href="./feeds/feedsDetail_01.html" class="w3-button w3-padding-large w3-white w3-border">READ MORE »</a>
+          <a href="./feeds/feedsDetail_01" class="w3-button w3-padding-large w3-white w3-border">READ MORE »</a>
           </div>
           <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
