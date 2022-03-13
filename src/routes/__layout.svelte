@@ -1,3 +1,8 @@
+
+<svelte:head>
+    <link rel="icon" type="image/svg" href="/static/favicon.png" />
+  </svelte:head>
+
 <!-- Navigator -->
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
