@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gamattract</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {font-family: "Lato", sans-serif; background-color: #1e1e1e;}
+.mySlides {display: none}
+.w3-third img{opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><img src="logo.png" style="height: 15px; margin-top: -3px;"></a>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">LATEST</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+    <a href="gameFeeds.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDS</a>
+    <a href="websiteGuide.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WEBSITES</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="moments.html" class="w3-bar-item w3-button"><em>BEST MOMENTS</em></a>
+        <a href="about.html" class="w3-bar-item w3-button">CONTACT</a>
+      </div>
+    </div>
+    <a target="_blank" href="https://gameattract.wordpress.com/" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-thumbs-up"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LATEST</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+  <a href="gameFeeds.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FEEDS</a>
+  <a href="websiteGuide.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WEBSITES</a>
+  <a href="moments.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><em>BEST MOMENTS</em></a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  
+    <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="gameImages/elden-ring.jpeg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="gameImages/genshin_impact.jpeg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="gameImages/horizon_forbidden_wests.jpeg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+    </div>
+
+    <div class="w3-third">
+      <img src="gameImages/genshin_impact.jpeg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="gameImages/horizon_forbidden_wests.jpeg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="gameImages/elden-ring.jpeg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+    
+    <div class="w3-third">
+      <img src="gameImages/horizon_forbidden_wests.jpeg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="gameImages/elden-ring.jpeg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="gameImages/genshin_impact.jpeg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">ESSEC</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>

@@ -24,7 +24,7 @@
     </div>
     <div class="w3-center">
         <a class="w3-round-xxlarge w3-button w3-black w3-section" href="../gallery"> 
-            <i class="fa fa-cubes"></i> back to galary
+            <i class="fa fa-cubes"></i> back to COLLECTION
         </a>
     </div>
 </div>
