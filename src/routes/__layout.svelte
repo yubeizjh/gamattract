@@ -5,12 +5,12 @@
         <a href="/" class="w3-bar-item w3-button w3-padding-large">LATEST</a>
         <a href="/gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
         <a href="/gameFeeds" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDS</a>
+        <a href="/moments" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BEST MOMENTS</a>
         <a href="/websiteGuide" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WEBSITES</a>
         <a href="/about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
         <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="/moments" class="w3-bar-item w3-button">BEST MOMENTS</a>
                 <a href="https://gameattract.wordpress.com/" class="w3-bar-item w3-button" target="_blank">PERSONAL WEBSITE</a>
             </div>
         </div>
