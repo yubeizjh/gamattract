@@ -1,5 +1,8 @@
 <style>
 h1, h3, h4, p {color: lightgray;}
+.page {
+        margin: 40px;
+    }
 </style>
 
 
@@ -44,13 +47,96 @@ h1, h3, h4, p {color: lightgray;}
 <div class="w3-container w3-padding-32 w3-center" id="contact" style="width: 50%;margin-left: 25%;">
 <h1 class="w3-padding-16">Contact</h1>
 <p style="margin-bottom: 40px;">Let us know which game you like to add or review</p>
-<form action="/action_page.php" target="_blank">
-	<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-	<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-	<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-	<textarea class="w3-input w3-section w3-border"  id="extra" name="extra" rows="3" placeholder="Comments"></textarea>
-	<button class="w3-button w3-black w3-section" type="submit">
-		<i class="fa fa-paper-plane"></i> SEND MESSAGE
-	</button>
-</form>
+
+<Form on:submit={handleSubmit}>
+
+    <input
+    class="w3-input w3-border"
+    placeholder="Name" 
+    id="name"
+    name="name"
+    on:change={handleChange}
+    bind:value={$form.name}
+    />
+
+    <input
+    class="w3-input w3-section w3-border"
+    placeholder="Email" 
+    id="email"
+    name="email"
+    on:change={handleChange}
+    bind:value={$form.email}
+    />
+
+    <input
+    class="w3-input w3-section w3-border"
+    placeholder="Subject" 
+    id="name"
+    name="name"
+    on:change={handleChange}
+    bind:value={$form.title}
+    />
+
+    <input
+    class="w3-input w3-section w3-border"
+    placeholder="Comments"
+    id="comments"
+    name="comments"
+    on:change={handleChange}
+    bind:value={$form.comments}
+    />
+
+    <button class="w3-button w3-black w3-section" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+</Form>
+
+
+
+{#if apiResult != null}
+    {#if apiResult == true}
+        <h2 style="color: white; margin-bottom: -30px;">We've received! <br/>Thanks for your comments!</h2>
+        {:else}
+        <h2 style="color: white; margin-bottom: -30px;">Ops! Something wrong with your submit.</h2>
+    {/if}    
+{/if}
+
+</div>
+
+
+<script>
+    
+
+    import { supabase } from "../supabaseClient";
+
+    import { createForm } from "svelte-forms-lib";
+
+    import { TextInput, TextArea, Button, FormGroup, Form, InlineNotification } from "carbon-components-svelte";
+
+    let apiResult = null;
+
+    const { form, errors, handleChange, handleSubmit, isSubmitting, handleReset } = createForm({
+        initialValues: { name: "", email: "", title: "" , comments: ""},
+        onSubmit: async values => {
+
+            try {
+                var result = await supabase.from("contact").insert(values);
+
+                if (result.data != null) {
+                    apiResult = true;
+                } else {
+                    apiResult = false;
+                }
+
+            } catch (ex) {
+                apiResult = false;
+            }
+
+            handleReset();
+      }
+    });
+
+</script>
+<div class="page">
+
+
+    
 </div>
