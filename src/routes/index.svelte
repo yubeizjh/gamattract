@@ -1,8 +1,4 @@
-<style>
-	.titleImg {
-		height: 800px;
-	}
-</style>
+
 
 
 <svelte:component
