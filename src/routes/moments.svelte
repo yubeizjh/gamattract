@@ -4,9 +4,10 @@
 
 </style>
 
-    <!-- Push down content on small screens --> 
+  <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
+  <!-- use array to display image & alt information -->
   <!-- Photo grid -->
   <div class="w3-row">
     <div class="w3-third">

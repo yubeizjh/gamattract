@@ -89,8 +89,7 @@ h1, h3, h4, p {color: lightgray;}
     <button class="w3-button w3-black w3-section" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
 </Form>
 
-
-
+<!-- apiResult Message -->
 {#if apiResult != null}
     {#if apiResult == true}
         <h2 style="color: white; margin-bottom: -30px;">We've received! <br/>Thanks for your comments!</h2>
@@ -104,6 +103,7 @@ h1, h3, h4, p {color: lightgray;}
 
 <script>
     
+    // supabase & svelte forms
 
     import { supabase } from "../supabaseClient";
 

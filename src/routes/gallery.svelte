@@ -1,12 +1,12 @@
 <style>
 .disImg {
-		width: 450px;
-		height: 250px;
 		margin-top: 20px;
 		margin-bottom: -10px;
+		max-width: 100%
 	}
 </style>
 
+<!-- use array to random display image -->
 <!-- First Photo Grid-->
 <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
@@ -53,7 +53,7 @@
 
 
 <script>
-
+// ref Array
 let rHref = [
 	"/details/gameDetails_01",
 	"/details/gD_genshin",
@@ -71,7 +71,7 @@ let rHref = [
 
 	"/details/gD_notready"
 ]
-
+// src array
 let rSrc = [
 	"/gameImages/elden-ring.jpeg",
 	"/gameImages/genshin_impact.jpeg",
@@ -90,7 +90,7 @@ let rSrc = [
 	"/gameImages/wow.jpeg"
 ]
 
-
+// result array
 let fHref = [];
 let fSrc = [];
 let maxNum = rHref.length;
@@ -101,6 +101,7 @@ for (let i=0;i<maxNumOfPic;i++){
 		fSrc[i]=rSrc[i];
 	}
 
+// random button
 function onClick () {
 	const data = [];
 	for (let i=0;i<maxNum;i++){

@@ -7,9 +7,10 @@
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
         <!-- svelte-ignore a11y-invalid-attribute -->
+        <!-- hide when small -->
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" on:click={myFunction} title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="/" class="w3-bar-item w3-button w3-padding-large"><img src="logo.png" alt="logo" style="height: 15px; margin-top: -3px;"></a>
-        <a href="/" class="w3-bar-item w3-button w3-padding-large">LATEST</a>
+        <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LATEST</a>
         <a href="/gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COLLECTION</a>
         <a href="/gameFeeds" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDS</a>
         <a href="/moments" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BEST MOMENTS</a>
@@ -49,6 +50,7 @@
     <p class="w3-medium">Powered by <a href="https://www.essec.edu/en/" target="_blank">ESSEC</a></p>
 </footer>
 
+<!-- Small Screen Navigator -->
 <script>
 function myFunction() {
   var x = document.getElementById("navDemo");

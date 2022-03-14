@@ -1,6 +1,4 @@
-
-
-
+<!-- Carousl using svelte carousl -->
 <svelte:component
   this={Carousel}
   bind:this={carousel}

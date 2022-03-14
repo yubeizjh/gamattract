@@ -48,7 +48,7 @@ h3{color: lightgray;}
 
 
 <!-- Page content -->   
-<div class="w3-content" style="max-width:2000px;margin-top:46px;margin-left:180px">
+<div class="w3-content" style="max-width:100%;margin-top:46px;margin-left:180px">
     
     <!-- Session -->  
     <div id="Platform" class="w3-container w3-margin-left">
