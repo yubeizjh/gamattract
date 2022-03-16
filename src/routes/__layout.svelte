@@ -47,6 +47,7 @@
 <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
     
     <a href="https://twitter.com/essec" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://github.com/yubeizjh/gamattract" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
     <p class="w3-medium">Powered by <a href="https://www.essec.edu/en/" target="_blank">ESSEC</a></p>
 </footer>
 
